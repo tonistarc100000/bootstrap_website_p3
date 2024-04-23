@@ -10,6 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- fevicon  -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="fevicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fevicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fevicon/favicon-16x16.png">
+    <link rel="manifest" href="fevicon/site.webmanifest">
+    <link rel="mask-icon" href="fevicon/safari-pinned-tab.svg" color="#9d00ff">
+    <meta name="msapplication-TileColor" content="#464646">
+    <meta name="theme-color" content="#2f2f2f">
+
+
 </head>
 
 <body class="bg-secondary" style="font-family: 'Times New Roman', Times, serif;font-size: 19px;">
@@ -37,7 +51,7 @@
                     <li><a href="local.html" class="nav-link px-2 text-danger">Local</a></li>
                     <li><a href="state.html" class="nav-link px-2 text-danger">State</a></li>
                     <li><a href="national.html" class="nav-link px-2 text-danger">National</a></li>
-                    <li><a href="international.html" class="nav-link px-2 text-danger border border-danger rounded"
+                    <li><a href="international.html" class="nav-link px-2 text-bg-danger rounded btn btn-outline-danger"
                             style="font-weight: 900; font-size: 22px;">International</a></li>
                     <li><a href="popular.html" class="nav-link px-2 text-danger">Popular</a></li>
                 </ul>
@@ -47,9 +61,11 @@
                         aria-label="Search">
                 </form>
 
-                <div class="text-end">
-                    <button type="button" class="btn btn-outline-danger me-2" id="login">Login</button>
-                    <button type="button" class="btn btn-outline-danger" id="signin">Sign-up</button>
+                <div class="text-end d-flex">
+                    <a href="login.html" class="nav-link"><button type="button"
+                            class="btn btn-outline-danger me-2">Login</button></a>
+                    <a href="signin.html" class="nav-link"><button type="button"
+                            class="btn btn-outline-danger">Sign-up</button></a>
                 </div>
             </div>
         </div>
@@ -61,10 +77,11 @@
     <main class="container mt-5">
         <div class="p-4 p-md-5 mb-4 rounded  bg-dark text-light">
             <div class="col-lg-6 px-0 ">
-                <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-                <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
-                    efficiently about what's most interesting in this post's contents.</p>
-
+                <a href="openblog_1.html" class="nav-link">
+                    <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+                    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
+                        efficiently about what's most interesting in this post's contents.</p>
+                </a>
             </div>
         </div>
 
@@ -72,84 +89,92 @@
         <!-- dual box design  -->
         <div class="row mb-2">
             <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
-                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-body-secondary">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                class="icon-link gap-1 icon-link-hover stretched-link"
-                                style="text-decoration: none;">Continue reading...</a></p>
+                <a href="openblog_1.html" class="nav-link">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
+                            <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-body-secondary">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <p class="lead mb-0"><a href="openblog_1.html"
+                                    class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="text-decoration: none;">Continue reading...</a></p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="Img/img4.jpg" alt="image4">
+                        </div>
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img4.jpg" alt="image4">
-                    </div>
-                </div>
+                </a>
             </div>
 
 
 
             <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                        <strong class="d-inline-block mb-2 text-light-emphasis">Design</strong>
-                        <h3 class="mb-0">Post title</h3>
-                        <div class="mb-1 text-body-secondary">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                class="icon-link gap-1 icon-link-hover stretched-link"
-                                style="text-decoration: none;">Continue reading...</a></p>
+                <a href="openblog_1.html" class="nav-link">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                            <strong class="d-inline-block mb-2 text-light-emphasis">Design</strong>
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-body-secondary">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.</p>
+                            <p class="lead mb-0"><a href="openblog_1.html"
+                                    class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="text-decoration: none;">Continue reading...</a></p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="Img/img5.jpg" alt="image5">
+                        </div>
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img5.jpg" alt="image5">
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
 
 
         <div class="row mb-2">
             <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-body-secondary">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                class="icon-link gap-1 icon-link-hover stretched-link"
-                                style="text-decoration: none;">Continue reading...</a></p>
+                <a href="openblog_1.html" class="nav-link">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                            <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-body-secondary">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <p class="lead mb-0"><a href="openblog_1.html"
+                                    class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="text-decoration: none;">Continue reading...</a></p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="Img/img6.jpg" alt="image6">
+                        </div>
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img6.jpg" alt="image6">
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
-                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-body-secondary">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                class="icon-link gap-1 icon-link-hover stretched-link"
-                                style="text-decoration: none;">Continue reading...</a></p>
+                <a href="openblog_1.html" class="nav-link">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
+                            <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-body-secondary">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <p class="lead mb-0"><a href="openblog_1.html"
+                                    class="icon-link gap-1 icon-link-hover stretched-link"
+                                    style="text-decoration: none;">Continue reading...</a></p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="Img/img7.jpg" alt="image7" style="width: 300px; height: 300px;">
+                        </div>
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img7.jpg" alt="image7" style="width: 300px; height: 300px;">
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -171,12 +196,12 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
                         <p class="lead mt-5">
-                            <a href="pages/openblog_1.html" class="icon-link gap-1 icon-link-hover stretched-link"
+                            <a href="openblog_1.html" class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a>
                         </p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img8.jpg" alt="image8">
+                        <img class="img-fluid" src="Img/img8.jpg" alt="image8">
                     </div>
                 </div>
             </div>
@@ -191,8 +216,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img9.jpg" alt="image9"
-                            style="width: 300px;height: 250px;">
+                        <img class="image-fluid " src="Img/img9.jpg" alt="image9" style="width: 300px;height: 250px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -200,7 +224,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -211,7 +235,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img10.jpg" alt="image10" style="width: 300px;height: 250px;">
+                        <img class="img-fluid" src="Img/img10.jpg" alt="image10" style="width: 300px;height: 250px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -219,7 +243,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -230,8 +254,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img11.jpg" alt="image11"
-                            style="width: 300px;height: 250px;">
+                        <img class="image-fluid " src="Img/img11.jpg" alt="image11" style="width: 300px;height: 250px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -239,7 +262,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -250,7 +273,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img12.jpg" alt="image12" style="width: 300px;height: 250px;">
+                        <img class="img-fluid" src="Img/img12.jpg" alt="image12" style="width: 300px;height: 250px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -258,7 +281,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -273,8 +296,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img13.jpg" alt="image13"
-                            style="width:300px;height:300px;">
+                        <img class="image-fluid " src="Img/img13.jpg" alt="image13" style="width:300px;height:300px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -282,7 +304,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -293,7 +315,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img14.jpg" alt="image14" style="width:300px;height:300px;">
+                        <img class="img-fluid" src="Img/img14.jpg" alt="image14" style="width:300px;height:300px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -301,7 +323,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -312,8 +334,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img15.jpg" alt="image15"
-                            style="width:300px;height:300px;">
+                        <img class="image-fluid " src="Img/img15.jpg" alt="image15" style="width:300px;height:300px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -321,7 +342,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -332,7 +353,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img16.jpg" alt="image16" style="width:300px;height:300px;">
+                        <img class="img-fluid" src="Img/img16.jpg" alt="image16" style="width:300px;height:300px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -340,7 +361,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -369,8 +390,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img17.jpg" alt="image17"
-                            style="width:630px;height:300px;">
+                        <img class="image-fluid " src="Img/img17.jpg" alt="image17" style="width:630px;height:300px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -378,7 +398,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.This is a wider card with supporting text below .</p>
-                        <p class="lead mb-5"><a href="pages/openblog_1.html"
+                        <p class="lead mb-5"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -389,7 +409,7 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img18.jpg" alt="image18" style="width:300px;height:290px;">
+                        <img class="img-fluid" src="Img/img18.jpg" alt="image18" style="width:300px;height:290px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -397,7 +417,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -408,8 +428,7 @@
                 <div
                     class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="image-fluid " src="images/img19.jpg" alt="image19"
-                            style="width:300px;height:290px;">
+                        <img class="image-fluid " src="Img/img19.jpg" alt="image19" style="width:300px;height:290px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -417,7 +436,7 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
                     </div>
@@ -435,33 +454,31 @@
 
 
 
-            <div class="row mb-2">
-                <div class="col-md-3">
-                    <div
-                        class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="image-fluid " src="images/img21.jpg" alt="image21"
-                                style="width:300px;height:290px;">
-                        </div>
-                        <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                            <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-body-secondary">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
-                            <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                    class="icon-link gap-1 icon-link-hover stretched-link"
-                                    style="text-decoration: none;">Continue reading...</a></p>
-                        </div>
+        <div class="row mb-2">
+            <div class="col-md-3">
+                <div
+                    class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="image-fluid " src="Img/img21.jpg" alt="image21" style="width:300px;height:290px;">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <p class="lead mb-0"><a href="openblog_1.html"
+                                class="icon-link gap-1 icon-link-hover stretched-link"
+                                style="text-decoration: none;">Continue reading...</a></p>
                     </div>
                 </div>
-                
-                <div class="col-md-3">
-                    <div
+            </div>
+
+            <div class="col-md-3">
+                <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img22.jpg" alt="image22"
-                        style="width:300px;height:290px;">
+                        <img class="img-fluid" src="Img/img22.jpg" alt="image22" style="width:300px;height:290px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -469,41 +486,125 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                            <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div
-                            class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
-                            <div class="col-auto d-none d-lg-block">
-                                <img class="image-fluid " src="" alt="image20"
-                                    style="width:630px;height:300px;">
-                            </div>
-                            <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                                <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                                <h3 class="mb-0">Featured post</h3>
-                                <div class="mb-1 text-body-secondary">Nov 12</div>
-                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content.This is a wider card with supporting text below .</p>
-                                <p class="lead mb-5"><a href="pages/openblog_1.html"
-                                        class="icon-link gap-1 icon-link-hover stretched-link"
-                                        style="text-decoration: none;">Continue reading...</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                
-                
+            </div>
 
-
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="image-fluid " src="Img/img20.jpg" alt="image20" style="width:630px;height:300px;">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.This is a wider card with supporting text below .</p>
+                        <p class="lead mb-5"><a href="openblog_1.html"
+                                class="icon-link gap-1 icon-link-hover stretched-link"
+                                style="text-decoration: none;">Continue reading...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
     </main>
+
+
+<!-- footer start from here  -->
+
+
+
+<footer class="footer bg-dark py-5" data-bs-theme="dark">
+    <div class="container pt-2 pt-sm-4">
+      <div class="row">
+        <div class="col-md-6 col-lg-5 col-xl-4 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+          <div class="navbar-brand text-danger p-0 me-0 mb-3 mb-lg-4">
+            <img src="images/LOGO.png" width="47" alt="Logo">
+            AWARZONZ
+          </div>
+          <p class="text-body mb-0">Suscipit ipsum tincidunt pellentesque vitae. Porttitor pellentesque enim consequat faucibus fermentum duis mollis facilisis pretium justo velit pretium nec ut imperdiet volutpat commodo facilisis.</p>
+        </div>
+        <div class="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3">
+          <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col pb-2 pb-sm-0 mb-4 mb-sm-0 text-light">
+              <h3 class="h5 pb-1 pb-sm-2 pb-lg-3 text-danger">Contact us</h3>
+              <ul class="nav flex-column mb-3">
+                <li>
+                  <a href="tel:4065550120" class="nav-link fs-lg fw-normal px-0 py-1 text-danger">
+                    <i class="fa-solid fa-phone" style="color: #ff2e2e;"></i>
+                    (406) 555‑0120
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:email@example.com" class="nav-link fs-lg fw-normal px-0 py-1 text-danger">
+                    <i class="fa-regular fa-envelope" style="color: #ff2e2e;"></i>
+                    email@example.com
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex pt-2 pt-sm-3 pt-md-4">
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-linkedin rounded-circle me-3" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook" style="color: #ff3838; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin" style="color: #ff3636; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-telegram rounded-circle me-3" aria-label="Telegram">
+                    <i class="fa-brands fa-telegram" style="color: #ff3939; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-youtube rounded-circle me-3" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube" style="color: #ff3838; font-size: 25px;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col ps-sm-4 ps-md-5">
+              <h3 class="h5 pb-1 pb-sm-2 pb-lg-3">Country</h3>
+              <div class="nav dropdown">
+                <a href="https://en.wikipedia.org/wiki/India" class="nav-link dropdown-toggle fs-lg fw-normal px-0 py-1" data-bs-toggle="dropdown">
+                  <img src="Img/India_flag.png" class="me-2" width="20" alt="Bharat">
+                  Bharat
+                </a>
+                <div class="dropdown-menu my-1">
+                  <a href="https://en.wikipedia.org/wiki/United_States" class="dropdown-item fs-base pb-1">
+                    <img src="Img/usa_flag.jpg" class="me-2" width="20" alt="USA">
+                    USA
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/China" class="dropdown-item fs-base pb-1">
+                    <img src="Img/China-flag.jpg" class="me-2" width="20" alt="China">
+                    China
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/Russia" class="dropdown-item fs-base pb-1">
+                    <img src="Img/" class="me-2" width="20" alt="Russia">
+                    Russia
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/United_Kingdom" class="dropdown-item fs-base pb-1">
+                    <img src="Img/UK_flag.jpg" class="me-2" width="20" alt="United Kingdom">
+                    United Kingdom
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="nav d-block fs-sm pt-5 mb-0" style="font-size: 14px;">
+        <span class="text-danger opacity-55">© All rights reserved. Made by </span>
+        <a class="nav-link d-inline-block p-0 text-light opacity-50" href="pages/signin.html" target="_blank" rel="being_member">AwarZonZ.com</a>
+      </p>
+    </div>
+  </footer>
+
+
+
 
 
 </body>

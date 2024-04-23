@@ -13,8 +13,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- src="images/img1.jpg" -->
+
+    <!-- fevicon  -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="FEVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FEVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FEVICON/favicon-16x16.png">
+    <link rel="manifest" href="FEVICON/site.webmanifest">
+    <link rel="mask-icon" href="FEVICON/safari-pinned-tab.svg" color="#9d00ff">
+    <meta name="msapplication-TileColor" content="#464646">
+    <meta name="theme-color" content="#2f2f2f">
+
+
+
 </head>
 
 <body class="bg-secondary" style="font-family: 'Times New Roman', Times, serif;font-size: 19px;">
@@ -36,7 +49,7 @@
 
                 <ul
                     class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 d-flex align-items-center">
-                    <li><a href="index.html" class="nav-link px-2 text-danger border border-danger rounded"
+                    <li><a href="index.html" class="nav-link px-2 text-bg-danger rounded btn btn-outline-danger"
                             style="font-weight: 900; font-size: 22px;border: 2px solid transparent; transition: border-color 0.5s;">Home</a>
                     </li>
                     <li><a href="pages/local.html" class="nav-link px-2 text-danger">Local</a></li>
@@ -51,9 +64,11 @@
                         aria-label="Search">
                 </form>
 
-                <div class="text-end">
-                    <button type="button" class="btn btn-outline-danger me-2">Login</button>
-                    <button type="button" class="btn btn-outline-danger">Sign-up</button>
+                <div class="text-end d-flex">
+                    <a href="pages/login.html" class="nav-link"><button type="button"
+                            class="btn btn-outline-danger me-2">Login</button></a>
+                    <a href="pages/signin.html" class="nav-link"><button type="button"
+                            class="btn btn-outline-danger">Sign-up</button></a>
                 </div>
             </div>
         </div>
@@ -513,33 +528,32 @@
 
 
 
-            <div class="row mb-2">
-                <div class="col-md-3">
-                    <div
-                        class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="image-fluid " src="images/img21.jpg" alt="image21"
-                                style="width:300px;height:290px;">
-                        </div>
-                        <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                            <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-body-secondary">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
-                            <p class="lead mb-0"><a href="pages/openblog_1.html"
-                                    class="icon-link gap-1 icon-link-hover stretched-link"
-                                    style="text-decoration: none;">Continue reading...</a></p>
-                        </div>
+        <div class="row mb-2">
+            <div class="col-md-3">
+                <div
+                    class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="image-fluid " src="images/img21.jpg" alt="image21"
+                            style="width:300px;height:290px;">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <p class="lead mb-0"><a href="pages/openblog_1.html"
+                                class="icon-link gap-1 icon-link-hover stretched-link"
+                                style="text-decoration: none;">Continue reading...</a></p>
                     </div>
                 </div>
-                
-                <div class="col-md-3">
-                    <div
+            </div>
+
+            <div class="col-md-3">
+                <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
                     <div class="col-auto d-none d-lg-block">
-                        <img class="img-fluid" src="images/img22.jpg" alt="image22"
-                        style="width:300px;height:290px;">
+                        <img class="img-fluid" src="images/img22.jpg" alt="image22" style="width:300px;height:290px;">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static bg-dark text-light">
                         <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
@@ -547,46 +561,129 @@
                         <div class="mb-1 text-body-secondary">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
-                            <p class="lead mb-0"><a href="pages/openblog_1.html"
+                        <p class="lead mb-0"><a href="pages/openblog_1.html"
                                 class="icon-link gap-1 icon-link-hover stretched-link"
                                 style="text-decoration: none;">Continue reading...</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div
-                            class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
-                            <div class="col-auto d-none d-lg-block">
-                                <img class="image-fluid " src="images/img20.jpg" alt="image20"
-                                    style="width:630px;height:300px;">
-                            </div>
-                            <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
-                                <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
-                                <h3 class="mb-0">Featured post</h3>
-                                <div class="mb-1 text-body-secondary">Nov 12</div>
-                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content.This is a wider card with supporting text below .</p>
-                                <p class="lead mb-5"><a href="pages/openblog_1.html"
-                                        class="icon-link gap-1 icon-link-hover stretched-link"
-                                        style="text-decoration: none;">Continue reading...</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                
-                
+            </div>
 
-
-
-
-
-
-
-
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-danger">
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="image-fluid " src="images/img20.jpg" alt="image20"
+                            style="width:630px;height:300px;">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static  bg-dark text-light">
+                        <strong class="d-inline-block mb-2 text-light-emphasis">World</strong>
+                        <h3 class="mb-0">Featured post</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.This is a wider card with supporting text below .</p>
+                        <p class="lead mb-5"><a href="pages/openblog_1.html"
+                                class="icon-link gap-1 icon-link-hover stretched-link"
+                                style="text-decoration: none;">Continue reading...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
+
+
+
+
+    
+<!-- footer start from here  -->
+
+
+
+<footer class="footer bg-dark py-5" data-bs-theme="dark">
+    <div class="container pt-2 pt-sm-4">
+      <div class="row">
+        <div class="col-md-6 col-lg-5 col-xl-4 pb-2 pb-sm-3 pb-md-0 mb-4 mb-md-0">
+          <div class="navbar-brand text-danger p-0 me-0 mb-3 mb-lg-4">
+            <img src="images/LOGO.png" width="47" alt="Logo">
+            AWARZONZ
+          </div>
+          <p class="text-body mb-0">Suscipit ipsum tincidunt pellentesque vitae. Porttitor pellentesque enim consequat faucibus fermentum duis mollis facilisis pretium justo velit pretium nec ut imperdiet volutpat commodo facilisis.</p>
+        </div>
+        <div class="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3">
+          <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col pb-2 pb-sm-0 mb-4 mb-sm-0 text-light">
+              <h3 class="h5 pb-1 pb-sm-2 pb-lg-3 text-danger">Contact us</h3>
+              <ul class="nav flex-column mb-3">
+                <li>
+                  <a href="tel:4065550120" class="nav-link fs-lg fw-normal px-0 py-1 text-danger">
+                    <i class="fa-solid fa-phone" style="color: #ff2e2e;"></i>
+                    (406) 555‑0120
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:email@example.com" class="nav-link fs-lg fw-normal px-0 py-1 text-danger">
+                    <i class="fa-regular fa-envelope" style="color: #ff2e2e;"></i>
+                    email@example.com
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex pt-2 pt-sm-3 pt-md-4">
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-linkedin rounded-circle me-3" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook" style="color: #ff3838; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin" style="color: #ff3636; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-telegram rounded-circle me-3" aria-label="Telegram">
+                    <i class="fa-brands fa-telegram" style="color: #ff3939; font-size: 25px;"></i>
+                </a>
+                <a href="pages/openblog_1.html" class="btn btn-icon btn-sm btn-dark btn-youtube rounded-circle me-3" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube" style="color: #ff3838; font-size: 25px;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col ps-sm-4 ps-md-5">
+              <h3 class="h5 pb-1 pb-sm-2 pb-lg-3">Country</h3>
+              <div class="nav dropdown">
+                <a href="https://en.wikipedia.org/wiki/India" class="nav-link dropdown-toggle fs-lg fw-normal px-0 py-1" data-bs-toggle="dropdown">
+                  <img src="images/India_flag.png" class="me-2" width="20" alt="Bharat">
+                  Bharat
+                </a>
+                <div class="dropdown-menu my-1">
+                  <a href="https://en.wikipedia.org/wiki/United_States" class="dropdown-item fs-base pb-1">
+                    <img src="images/usa_flag.jpg" class="me-2" width="20" alt="USA">
+                    USA
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/China" class="dropdown-item fs-base pb-1">
+                    <img src="images/China-flag.jpg" class="me-2" width="20" alt="China">
+                    China
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/Russia" class="dropdown-item fs-base pb-1">
+                    <img src="images/Russia_flag.jpg" class="me-2" width="20" alt="Russia">
+                    Russia
+                  </a>
+                  <a href="https://en.wikipedia.org/wiki/United_Kingdom" class="dropdown-item fs-base pb-1">
+                    <img src="images/UK_flag.jpg" class="me-2" width="20" alt="United Kingdom">
+                    United Kingdom
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="nav d-block fs-sm pt-5 mb-0" style="font-size: 14px;">
+        <span class="text-danger opacity-55">© All rights reserved. Made by </span>
+        <a class="nav-link d-inline-block p-0 text-light opacity-50" href="pages/signin.html" target="_blank" rel="being_member">AwarZonZ.com</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
 
 </body>
 
